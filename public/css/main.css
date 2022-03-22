@@ -1,0 +1,64 @@
+body {
+  background: #2b5876;
+  font-family: arial;
+}
+
+#beep {
+  display:none;
+}
+
+.btn {
+  margin: 2px;
+}
+
+.btn-secondary {
+  background-color: #D7DDE8;
+  border-color: #757F9A;
+  border-radius: 100%;
+  color: #757F9A;
+}
+
+#clock-container {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(45deg, #5433ff, #20bdff, #a5fecb);
+  background-size: 200% 200%;
+  background-position: center;
+  border-radius: 10px;
+  border: 2px solid #D7DDE8;
+}
+ 
+#timer-container, #options {
+  flex: 1 0 41%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#options {
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#options > div {
+  padding: 20px 0;
+}
+
+#break-length, #session-length {
+  font-size: 22px;
+  padding: 0 20px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#break-label, #session-label, #timer-label {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#time-left {
+  font-size: 48px;
+}
